@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <div class="row">
+    <div style="padding:10px" class=" col-lg-12 col-md-12 bg-info text-light">
+      <marquee direction="left">
+        <h2 class="text-center" style="color: white;">
+          <!--Built in pipes lowercase,uppercase,titlcase
+          {{title|lowercase}}-->
+          <!--NOTE: in case if you want to disable angular we use built in directive known as ng
+          nonbindable-->
+          {{title}}
+
+        </h2>
+      </marquee>
+    </div>
+  </div>
+
+
+
+  <div class="bg">
+    <router-outlet></router-outlet>
+  </div>
+  <nav class="navbar fixed-bottom navbar-dark bg-dark info" style="height: 50px ;">
+    <div class="navbar-brand font-italic font-size: 7px;" href="#">
+      <!-- <div class="text-right text-primary"> -->
+      <!-- <strong> -->
+        This site is copyright &copy;to Welfarebank.
+        <!--{{todaysDate | date:'medium'}}.--> All rights are reserved.
+      <!-- </strong> -->
+      <!-- </div> -->
+    </div>
+    <div class="navbar-brand font-italic font-size: 7px;" href="#">
+    <div class="col-lg-4 col-md-4">
+      <div class="text-right">
+        <!-- <strong> -->
+          {{todaysDate | date:'medium'}}
+        <!-- </strong> -->
+      </div>
+    </div>
+  </div>
+  </nav>
+</div>
